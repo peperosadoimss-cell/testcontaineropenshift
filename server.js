@@ -4,7 +4,7 @@ const port = 8080;
 
 app.get('/', (req, res) => {
   res.json({
-    mensaje: "¡Hola desde OpenShift!",
+    mensaje: "¡Hola jose luis desde OpenShift!",
     fecha: new Date(),
     hostname: require('os').hostname() // Útil para ver el ID del POD
   });
