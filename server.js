@@ -3,6 +3,7 @@ const app = express();
 const port = 8080;
 
 app.get('/', (req, res) => {
+  console.log("Entrando a la ruta raíz '/'");
   res.json({
     mensaje: "¡Hola jose luis desde OpenShift!",
     fecha: new Date(),
