@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: testcontaineropenshift-demo
+  namespace: default
+  labels:
+    app: testcontaineropenshift
+spec:
+  containers:
+  - name: testcontaineropenshift
+    image: peperosadoimss/testcontaineropenshift:v1.0.0
+    ports:
+    - containerPort: 8080 # El puerto que expone tu Dockerfile
